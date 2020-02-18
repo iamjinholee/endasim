@@ -1,0 +1,4 @@
+#env = Environment(CXX='clang++')
+env = Environment(CXX='g++')
+env.Append(CXXFLAGS = '-std=c++11')
+env.Program('main', ['layer_info.cpp', 'main.cpp'])

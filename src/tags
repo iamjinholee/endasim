@@ -1,0 +1,500 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Bank	component.h	/^    Bank() {$/;"	f	class:Buffer::Bank
+Bank	component.h	/^  class Bank {$/;"	c	class:Buffer
+Buffer	component.cpp	/^Buffer::Buffer(int bank_num, int rd_latency, int wr_latency) : Component()$/;"	f	class:Buffer
+Buffer	component.h	/^  Buffer(int bank_num, int latency): Buffer(bank_num, latency, latency){}$/;"	f	class:Buffer
+Buffer	component.h	/^class Buffer: public Component {$/;"	c
+BufferGroup	component.cpp	/^BufferGroup::BufferGroup(int num, int bank_num, int rd_latency, int wr_latency) : Component()$/;"	f	class:BufferGroup
+BufferGroup	component.h	/^  BufferGroup(int num, int bank_num, int latency) $/;"	f	class:BufferGroup
+BufferGroup	component.h	/^class BufferGroup : public Component {$/;"	c
+CTRL_area	config.h	/^  float CTRL_area; \/\/ mm2$/;"	m	class:SimConfigs
+CTRL_dynamic_energy	config.h	/^  float CTRL_dynamic_energy; \/\/ nJ $/;"	m	class:SimConfigs
+CTRL_static_power	config.h	/^  float CTRL_static_power ; \/\/ mW $/;"	m	class:SimConfigs
+Component	component.h	/^  Component(){$/;"	f	class:Component
+Component	component.h	/^class Component {$/;"	c
+ComponetID	common.h	/^enum ComponetID {$/;"	g
+CtrlCore	global_controller.cpp	/^CtrlCore::CtrlCore(int total_pipe_stage, int bit_size, LayerInfo* layer_info) $/;"	f	class:CtrlCore
+CtrlCore	global_controller.h	/^class CtrlCore  {$/;"	c
+CtrlsPipeStage	pipe_stage.cpp	/^CtrlsPipeStage::CtrlsPipeStage(PipePort *in_port, PipePort *out_port, $/;"	f	class:CtrlsPipeStage
+CtrlsPipeStage	pipe_stage.h	/^class CtrlsPipeStage : public PipeStage {$/;"	c
+DEBUG_COUT	dnn_sim.cpp	4;"	d	file:
+DEBUG_COUT2	dnn_sim.cpp	5;"	d	file:
+DNNSim	dnn_sim.cpp	/^DNNSim::DNNSim(SimConfigs* config, NetConfigs* net, LayerInfo* layer_info) : sim_config_(config), net_config_(net), layer_info_(layer_info){$/;"	f	class:DNNSim
+DNNSim	dnn_sim.h	/^class DNNSim {$/;"	c
+DRAM_access_cycle	config.h	/^  unsigned DRAM_access_cycle;$/;"	m	class:SimConfigs
+END_enable	config.h	/^  unsigned END_enable;$/;"	m	class:SimConfigs
+EOP	common.h	/^  EOP$/;"	e	enum:SimState
+FB	common.h	/^  FB,$/;"	e	enum:ComponetID
+FB_	dnn_sim.h	/^  BufferGroup *FB_;$/;"	m	class:DNNSim
+FB_PU	common.h	/^  FB_PU, \/\/ move data from FB to PU $/;"	e	enum:SimState
+FB_PU_PART	common.h	/^  FB_PU_PART,$/;"	e	enum:SimState
+FB_access_cycle	config.h	/^  unsigned FB_access_cycle;$/;"	m	class:SimConfigs
+FB_area	config.h	/^  float FB_area; \/\/ mm2$/;"	m	class:SimConfigs
+FB_bank_num	config.h	/^  unsigned FB_bank_num; \/\/ $/;"	m	class:SimConfigs
+FB_capacity	config.h	/^  unsigned FB_capacity; \/\/ kB$/;"	m	class:SimConfigs
+FB_dynamic_energy	config.h	/^  float FB_dynamic_energy; \/\/ nJ $/;"	m	class:SimConfigs
+FB_num	config.h	/^  unsigned FB_num; \/\/ $/;"	m	class:SimConfigs
+FB_static_power	config.h	/^  float FB_static_power ; \/\/ mW $/;"	m	class:SimConfigs
+GB	common.h	/^  GB,$/;"	e	enum:ComponetID
+GB_	dnn_sim.h	/^  BufferGroup *GB_;$/;"	m	class:DNNSim
+GB_WB	common.h	/^  GB_WB, \/\/ move data from GB to WB (weight buffer)$/;"	e	enum:SimState
+GB_WB_PART	common.h	/^  GB_WB_PART,$/;"	e	enum:SimState
+GB_access_cycle	config.h	/^  unsigned GB_access_cycle;$/;"	m	class:SimConfigs
+GB_area	config.h	/^  float GB_area; \/\/ mm2$/;"	m	class:SimConfigs
+GB_bank_num	config.h	/^  unsigned GB_bank_num;$/;"	m	class:SimConfigs
+GB_capacity	config.h	/^  unsigned GB_capacity; \/\/ kB$/;"	m	class:SimConfigs
+GB_dynamic_energy	config.h	/^  float GB_dynamic_energy; \/\/ nJ $/;"	m	class:SimConfigs
+GB_dynamic_write_energy	config.h	/^  float GB_dynamic_write_energy; \/\/ nJ $/;"	m	class:SimConfigs
+GB_num	config.h	/^  unsigned GB_num; \/\/ $/;"	m	class:SimConfigs
+GB_static_power	config.h	/^  float GB_static_power ; \/\/ mW $/;"	m	class:SimConfigs
+GB_type	config.h	/^  unsigned GB_type; \/\/ 1: SRAM, 2: STT-RAM $/;"	m	class:SimConfigs
+GB_write_cycle	config.h	/^  unsigned GB_write_cycle;$/;"	m	class:SimConfigs
+GetDesc	option_parser.cpp	/^   const string& GetDesc() { return m_optionDesc; }$/;"	f	class:OptionRegistryInterface
+GetName	option_parser.cpp	/^   const string& GetName() { return m_optionName; }$/;"	f	class:OptionRegistryInterface
+GlobalCtrl	global_controller.cpp	/^GlobalCtrl::GlobalCtrl(SimConfigs *sim_config, NetConfigs *net_config, LayerInfo *layer_info) {$/;"	f	class:GlobalCtrl
+GlobalCtrl	global_controller.h	/^class GlobalCtrl {$/;"	c
+INIT	common.h	/^  INIT = 0,$/;"	e	enum:SimState
+INPUT_FEATURE_BASE_ADDRESS	common.h	44;"	d
+ImageParser	image_parser.cpp	/^ImageParser::ImageParser(string &fileName) {$/;"	f	class:ImageParser
+ImageParser	image_parser.h	/^class ImageParser {$/;"	c
+LayerInfo	common.h	/^class LayerInfo {$/;"	c
+MEM	common.h	/^  MEM = 0,$/;"	e	enum:ComponetID
+MEM_FB	common.h	/^  MEM_FB, \/\/ move data from MEM to FB (input feature map buffer)$/;"	e	enum:SimState
+MEM_FB_PART	common.h	/^  MEM_FB_PART,$/;"	e	enum:SimState
+MEM_GB	common.h	/^  MEM_GB, \/\/ move data from MEM to GB$/;"	e	enum:SimState
+MEM_WB	common.h	/^  MEM_WB, \/\/ move data from MEM to WB (for fully-connected case)$/;"	e	enum:SimState
+NET_area	config.h	/^  float NET_area; \/\/ mm2$/;"	m	class:SimConfigs
+NET_dynamic_energy	config.h	/^  float NET_dynamic_energy; \/\/ nJ $/;"	m	class:SimConfigs
+NET_static_power	config.h	/^  float NET_static_power ; \/\/ mW $/;"	m	class:SimConfigs
+NUM_PIPELINE_STAGE	common.h	33;"	d
+NetConfigs	config.h	/^  NetConfigs(){};$/;"	f	class:NetConfigs
+NetConfigs	config.h	/^class NetConfigs {$/;"	c
+OPT_BOOL	option_parser.h	/^    OPT_BOOL,$/;"	e	enum:option_dtype
+OPT_CHAR	option_parser.h	/^    OPT_CHAR,$/;"	e	enum:option_dtype
+OPT_CSTR	option_parser.h	/^    OPT_CSTR$/;"	e	enum:option_dtype
+OPT_DOUBLE	option_parser.h	/^    OPT_DOUBLE,$/;"	e	enum:option_dtype
+OPT_FLOAT	option_parser.h	/^    OPT_FLOAT,$/;"	e	enum:option_dtype
+OPT_INT32	option_parser.h	/^    OPT_INT32,$/;"	e	enum:option_dtype
+OPT_INT64	option_parser.h	/^    OPT_INT64,$/;"	e	enum:option_dtype
+OPT_UINT32	option_parser.h	/^    OPT_UINT32,$/;"	e	enum:option_dtype
+OPT_UINT64	option_parser.h	/^    OPT_UINT64,$/;"	e	enum:option_dtype
+OUTPUT_FEATURE_BASE_ADDRESS	common.h	45;"	d
+OptionCollection	option_parser.cpp	/^   typedef list<OptionRegistryInterface*> OptionCollection;$/;"	t	class:OptionParser	file:
+OptionMap	option_parser.cpp	/^   typedef map<string, OptionRegistryInterface*> OptionMap;$/;"	t	class:OptionParser	file:
+OptionParser	option_parser.cpp	/^   OptionParser() {}$/;"	f	class:OptionParser
+OptionParser	option_parser.cpp	/^class OptionParser$/;"	c	file:
+OptionRegistry	option_parser.cpp	/^   OptionRegistry(const string name, const string desc, T &variable)$/;"	f	class:OptionRegistry
+OptionRegistry	option_parser.cpp	/^class OptionRegistry : public OptionRegistryInterface $/;"	c	file:
+OptionRegistryInterface	option_parser.cpp	/^   OptionRegistryInterface(const string optionName, const string optionDesc) $/;"	f	class:OptionRegistryInterface
+OptionRegistryInterface	option_parser.cpp	/^class OptionRegistryInterface $/;"	c	file:
+OutputFile	output_file.cpp	/^OutputFile::OutputFile(SimConfigs *config, NetConfigs *net) {$/;"	f	class:OutputFile
+OutputFile	output_file.h	/^class OutputFile {$/;"	c
+PE_pipe_stage_	global_controller.h	/^  PEsPipeStage *PE_pipe_stage_;$/;"	m	class:GlobalCtrl
+PEsPipeStage	pipe_stage.cpp	/^PEsPipeStage::PEsPipeStage(PipePort *in_port, PipePort *out_port, $/;"	f	class:PEsPipeStage
+PEsPipeStage	pipe_stage.h	/^class PEsPipeStage : public PipeStage {$/;"	c
+PU	common.h	/^  PU$/;"	e	enum:ComponetID
+PU_	dnn_sim.h	/^  PUnitArray *PU_;$/;"	m	class:DNNSim
+PU_access_cycle	config.h	/^  unsigned PU_access_cycle;$/;"	m	class:SimConfigs
+PU_area	config.h	/^  float PU_area; \/\/ mm2$/;"	m	class:SimConfigs
+PU_dynamic_energy	config.h	/^  float PU_dynamic_energy; \/\/ nJ $/;"	m	class:SimConfigs
+PU_input_num	config.h	/^  unsigned PU_input_num;$/;"	m	class:SimConfigs
+PU_num_	component.h	/^  int PU_num_;$/;"	m	class:PUnitRow
+PU_rows	component.h	/^  vector<PUnitRow> PU_rows;$/;"	m	class:PUnitArray
+PU_static_power	config.h	/^  float PU_static_power ; \/\/ mW $/;"	m	class:SimConfigs
+PUnit	component.h	/^    PUnit() {$/;"	f	class:PUnitRow::PUnit
+PUnit	component.h	/^  class PUnit {$/;"	c	class:PUnitRow
+PUnitArray	component.cpp	/^PUnitArray::PUnitArray(int row_num, int PU_num, int latency) : Component()$/;"	f	class:PUnitArray
+PUnitArray	component.h	/^class PUnitArray : public Component {$/;"	c
+PUnitRow	component.cpp	/^PUnitRow::PUnitRow(int PU_num, int latency) : Component()$/;"	f	class:PUnitRow
+PUnitRow	component.h	/^class PUnitRow : public Component {$/;"	c
+PUs	component.h	/^  vector<PUnit> PUs;$/;"	m	class:PUnitRow
+ParseCommandLine	option_parser.cpp	/^    void ParseCommandLine(int argc, const char * const argv[])$/;"	f	class:OptionParser
+ParseCommandLine2	option_parser.cpp	/^    void ParseCommandLine2(int argc, const char * const argv[])$/;"	f	class:OptionParser
+ParseFile	option_parser.cpp	/^   void ParseFile(const char *filename) {$/;"	f	class:OptionParser
+ParseString	option_parser.cpp	/^   void ParseString(string inputString, const string delimiters = string(" ;")) {$/;"	f	class:OptionParser
+ParseStringStream	option_parser.cpp	/^   void ParseStringStream(stringstream &args) {$/;"	f	class:OptionParser
+PipeOp	pipe_stage.cpp	/^PipeOp::PipeOp() {$/;"	f	class:PipeOp
+PipeOp	pipe_stage.cpp	/^PipeOp::PipeOp(unsigned info_num) {$/;"	f	class:PipeOp
+PipeOp	pipe_stage.h	/^class PipeOp {$/;"	c
+PipeOpInfo	pipe_stage.cpp	/^PipeOpInfo::PipeOpInfo() {$/;"	f	class:PipeOpInfo
+PipeOpInfo	pipe_stage.cpp	/^PipeOpInfo::PipeOpInfo(int z, int bit_pos) {$/;"	f	class:PipeOpInfo
+PipeOpInfo	pipe_stage.h	/^class PipeOpInfo {$/;"	c
+PipePort	pipe_stage.h	/^typedef queue<PipeOp *> PipePort;$/;"	t
+PipeStage	pipe_stage.cpp	/^PipeStage::PipeStage(PipePort *in_port, PipePort *out_port, $/;"	f	class:PipeStage
+PipeStage	pipe_stage.h	/^class PipeStage {$/;"	c
+Print	option_parser.cpp	/^   void Print(FILE *fout)$/;"	f	class:OptionParser
+ProviderPipeStage	pipe_stage.cpp	/^ProviderPipeStage::ProviderPipeStage(PipePort *in_port, PipePort *out_port, $/;"	f	class:ProviderPipeStage
+ProviderPipeStage	pipe_stage.h	/^class ProviderPipeStage : public PipeStage {$/;"	c
+RUN_PU	common.h	/^  RUN_PU,$/;"	e	enum:SimState
+Register	option_parser.cpp	/^   void Register(const string optionName, const string optionDesc, T &optionVariable, const char *optionDefault)$/;"	f	class:OptionParser
+ReqEntry	component.h	/^  ReqEntry() {$/;"	f	class:ReqEntry
+ReqEntry	component.h	/^  ReqEntry(int type, int address) {$/;"	f	class:ReqEntry
+ReqEntry	component.h	/^class ReqEntry {$/;"	c
+SB_pipe_stage_	global_controller.h	/^  SBsPipeStage *SB_pipe_stage_;$/;"	m	class:GlobalCtrl
+SBsPipeStage	pipe_stage.cpp	/^SBsPipeStage::SBsPipeStage(PipePort *in_port, PipePort *out_port, $/;"	f	class:SBsPipeStage
+SBsPipeStage	pipe_stage.h	/^class SBsPipeStage : public PipeStage {$/;"	c
+SimConfigs	config.h	/^  SimConfigs(){};$/;"	f	class:SimConfigs
+SimConfigs	config.h	/^class SimConfigs {$/;"	c
+SimState	common.h	/^enum SimState {$/;"	g
+WB	common.h	/^  WB,$/;"	e	enum:ComponetID
+WB_	dnn_sim.h	/^  WeightBufferGroup *WB_;$/;"	m	class:DNNSim
+WB_access_cycle	config.h	/^  unsigned WB_access_cycle;$/;"	m	class:SimConfigs
+WB_area	config.h	/^  float WB_area; \/\/ mm2$/;"	m	class:SimConfigs
+WB_bank_num	config.h	/^  unsigned WB_bank_num; \/\/ $/;"	m	class:SimConfigs
+WB_capacity	config.h	/^  unsigned WB_capacity; \/\/ kB$/;"	m	class:SimConfigs
+WB_dynamic_energy	config.h	/^  float WB_dynamic_energy; \/\/ nJ $/;"	m	class:SimConfigs
+WB_num	config.h	/^  unsigned WB_num; \/\/ $/;"	m	class:SimConfigs
+WB_static_power	config.h	/^  float WB_static_power ; \/\/ mW $/;"	m	class:SimConfigs
+WEIGHT_BASE_ADDRESS	common.h	43;"	d
+WeightBufferGroup	component.h	/^  WeightBufferGroup(int num, int bank_num, int latency) $/;"	f	class:WeightBufferGroup
+WeightBufferGroup	component.h	/^class WeightBufferGroup : public BufferGroup {$/;"	c
+__CONFIG_H__	config.h	2;"	d
+__DNN_SIM__	dnn_sim.h	2;"	d
+__DRAM_H__	dram_interface.h	2;"	d
+__OPTION_PARSER_H__	option_parser.h	34;"	d
+__SRC_COMMON_H__	common.h	2;"	d
+__SRC_COMPONENT_H__	component.h	2;"	d
+__SRC_GLOBAL_CONTROLLER_H__	global_controller.h	2;"	d
+__SRC_IMAGE_PARSER_H__	image_parser.h	2;"	d
+__SRC_OUTPUT_FILE_H__	output_file.h	2;"	d
+__SRC_PIPE_STAGE_H__	pipe_stage.h	2;"	d
+acc_num_	pipe_stage.h	/^  vector<uint64_t> acc_num_;$/;"	m	class:PipeStage
+access_start_time_	component.h	/^    uint64_t access_start_time_;$/;"	m	class:Buffer::Bank
+access_start_time_	component.h	/^    uint64_t access_start_time_;$/;"	m	class:PUnitRow::PUnit
+address_	component.h	/^  uint64_t address_;$/;"	m	class:ReqEntry
+assignDefault	option_parser.cpp	/^   virtual bool assignDefault(const char *str) { return fromString(str); }$/;"	f	class:OptionRegistry
+assignDefault	option_parser.cpp	/^bool OptionRegistry<char *>::assignDefault(const char *str) $/;"	f	class:OptionRegistry
+bank_num_	component.h	/^  int bank_num_;$/;"	m	class:Buffer
+banks	component.h	/^  vector<Bank > banks;$/;"	m	class:Buffer
+bit_pos_	global_controller.h	/^  int bit_pos_;$/;"	m	struct:pipeEntry
+bit_pos_	pipe_stage.h	/^  int bit_pos_;$/;"	m	class:PipeOpInfo
+bit_size_	global_controller.h	/^  int bit_size_; \/\/ 16 $/;"	m	class:GlobalCtrl
+bit_size_	global_controller.h	/^  int bit_size_;$/;"	m	class:CtrlCore
+buffer	component.h	/^  vector<Buffer > buffer;$/;"	m	class:BufferGroup
+calcAccess	dnn_sim.cpp	/^void DNNSim::calcAccess() {$/;"	f	class:DNNSim
+calcAccess	global_controller.cpp	/^void GlobalCtrl::calcAccess() {$/;"	f	class:GlobalCtrl
+calcEnergy	output_file.cpp	/^void OutputFile::calcEnergy() {$/;"	f	class:OutputFile
+can_accept_request	dram_interface.cpp	/^bool dram_interface::can_accept_request() const {$/;"	f	class:dram_interface
+clock_	component.h	/^  uint64_t clock_;$/;"	m	class:Buffer
+clock_	component.h	/^  uint64_t clock_;$/;"	m	class:PUnitRow
+component_cycle	output_file.h	/^  vector<uint64_t> component_cycle;$/;"	m	class:OutputFile
+config_	output_file.h	/^  SimConfigs *config_;$/;"	m	class:OutputFile
+countAccNum	pipe_stage.cpp	/^void CtrlsPipeStage::countAccNum() {$/;"	f	class:CtrlsPipeStage
+countAccNum	pipe_stage.cpp	/^void PEsPipeStage::countAccNum() {$/;"	f	class:PEsPipeStage
+countAccNum	pipe_stage.cpp	/^void PipeStage::countAccNum() {$/;"	f	class:PipeStage
+countAccNum	pipe_stage.cpp	/^void ProviderPipeStage::countAccNum() {$/;"	f	class:ProviderPipeStage
+countAccNum	pipe_stage.cpp	/^void SBsPipeStage::countAccNum() {$/;"	f	class:SBsPipeStage
+count_cycle_load_PU_	dnn_sim.h	/^  int count_cycle_load_PU_;$/;"	m	class:DNNSim
+count_cycle_load_PU_part_	dnn_sim.h	/^  int count_cycle_load_PU_part_;$/;"	m	class:DNNSim
+count_x_	dnn_sim.h	/^  int count_x_;$/;"	m	class:DNNSim
+count_x_	global_controller.h	/^  int count_x_;$/;"	m	class:GlobalCtrl
+count_y_	dnn_sim.h	/^  int count_y_;$/;"	m	class:DNNSim
+count_y_	global_controller.h	/^  int count_y_;$/;"	m	class:GlobalCtrl
+count_z_	global_controller.h	/^  vector<int> count_z_;$/;"	m	class:GlobalCtrl
+counter_FB_PU_	dnn_sim.h	/^  uint64_t counter_FB_PU_;$/;"	m	class:DNNSim
+counter_FB_PU_PART_	dnn_sim.h	/^  uint64_t counter_FB_PU_PART_;$/;"	m	class:DNNSim
+counter_GB_WB_	dnn_sim.h	/^  uint64_t counter_GB_WB_;$/;"	m	class:DNNSim
+counter_MEM_FB_	dnn_sim.h	/^  uint64_t counter_MEM_FB_;$/;"	m	class:DNNSim
+counter_MEM_FB_PART_	dnn_sim.h	/^  uint64_t counter_MEM_FB_PART_;$/;"	m	class:DNNSim
+counter_MEM_GB_	dnn_sim.h	/^  uint64_t counter_MEM_GB_;$/;"	m	class:DNNSim
+counter_MEM_WB_	dnn_sim.h	/^  uint64_t counter_MEM_WB_;$/;"	m	class:DNNSim
+ctrl_core_	global_controller.h	/^  vector<CtrlCore> ctrl_core_; $/;"	m	class:GlobalCtrl
+ctrl_pipe_stage_	global_controller.h	/^  CtrlsPipeStage *ctrl_pipe_stage_;$/;"	m	class:GlobalCtrl
+cycle	component.cpp	/^void Buffer::cycle() {$/;"	f	class:Buffer
+cycle	component.cpp	/^void BufferGroup::cycle() {$/;"	f	class:BufferGroup
+cycle	component.cpp	/^void PUnitArray::cycle() {$/;"	f	class:PUnitArray
+cycle	component.cpp	/^void PUnitRow::cycle() {$/;"	f	class:PUnitRow
+cycle	dnn_sim.cpp	/^void DNNSim::cycle() {$/;"	f	class:DNNSim
+cycle	dram_interface.cpp	/^void dram_interface::dram_interface::cycle(){$/;"	f	class:dram_interface::dram_interface
+cycle	global_controller.cpp	/^void GlobalCtrl::cycle() {$/;"	f	class:GlobalCtrl
+cycle	pipe_stage.cpp	/^void CtrlsPipeStage::cycle() {$/;"	f	class:CtrlsPipeStage
+cycle	pipe_stage.cpp	/^void PEsPipeStage::cycle() {$/;"	f	class:PEsPipeStage
+cycle	pipe_stage.cpp	/^void ProviderPipeStage::cycle() {$/;"	f	class:ProviderPipeStage
+cycle	pipe_stage.cpp	/^void SBsPipeStage::cycle() {$/;"	f	class:SBsPipeStage
+cycle_END	global_controller.cpp	/^void GlobalCtrl::cycle_END() {$/;"	f	class:GlobalCtrl
+cycle_conv	dnn_sim.cpp	/^void DNNSim::cycle_conv() {$/;"	f	class:DNNSim
+cycle_fc1	dnn_sim.cpp	/^void DNNSim::cycle_fc1() {$/;"	f	class:DNNSim
+cycle_load_PU_	dnn_sim.h	/^  int cycle_load_PU_;$/;"	m	class:DNNSim
+cycle_load_PU_part_	dnn_sim.h	/^  int cycle_load_PU_part_;$/;"	m	class:DNNSim
+cycle_no_END	global_controller.cpp	/^void GlobalCtrl::cycle_no_END() {$/;"	f	class:GlobalCtrl
+cycle_test	dnn_sim.cpp	/^void DNNSim::cycle_test() {$/;"	f	class:DNNSim
+div_num	config.h	/^  unsigned div_num;$/;"	m	class:SimConfigs
+div_num_	global_controller.h	/^  int div_num_;$/;"	m	class:GlobalCtrl
+div_num_	pipe_stage.h	/^  unsigned div_num_;$/;"	m	class:PipeStage
+div_output_layer_z_	global_controller.h	/^  vector< pair<int, int> > div_output_layer_z_; \/\/ pair<start, end>$/;"	m	class:GlobalCtrl
+dram_interface	dram_interface.cpp	/^dram_interface::dram_interface(const std::string& dram_config_file, $/;"	f	class:dram_interface
+dram_interface	dram_interface.h	/^class dram_interface {$/;"	c
+dyn_eng_acc_CTRL_	output_file.h	/^  double dyn_eng_acc_CTRL_;$/;"	m	class:OutputFile
+dyn_eng_acc_FB_	output_file.h	/^  double dyn_eng_acc_FB_;$/;"	m	class:OutputFile
+dyn_eng_acc_GB_	output_file.h	/^  double dyn_eng_acc_GB_;$/;"	m	class:OutputFile
+dyn_eng_acc_NET_	output_file.h	/^  double dyn_eng_acc_NET_;$/;"	m	class:OutputFile
+dyn_eng_acc_PU_	output_file.h	/^  double dyn_eng_acc_PU_;$/;"	m	class:OutputFile
+dyn_eng_acc_WB_	output_file.h	/^  double dyn_eng_acc_WB_;$/;"	m	class:OutputFile
+end_condition_test_	global_controller.h	/^  int end_condition_test_;$/;"	m	class:GlobalCtrl
+end_condition_test_	pipe_stage.h	/^  int end_condition_test_;$/;"	m	class:CtrlsPipeStage
+end_flag_	pipe_stage.h	/^  bool end_flag_;$/;"	m	class:CtrlsPipeStage
+end_pos	image_parser.h	/^  int ***end_pos;$/;"	m	class:ImageParser
+end_pos_	common.h	/^  int ***end_pos_; $/;"	m	class:LayerInfo
+end_pos_	global_controller.h	/^  int ***end_pos_;$/;"	m	class:GlobalCtrl
+entry_	component.h	/^    ReqEntry entry_;$/;"	m	class:Buffer::Bank
+entry_	component.h	/^    ReqEntry entry_;$/;"	m	class:PUnitRow::PUnit
+fblock_id_	component.h	/^  int fblock_id_; $/;"	m	class:WeightBufferGroup
+fblock_id_	dnn_sim.h	/^  int fblock_id_;$/;"	m	class:DNNSim
+fblock_id_	global_controller.h	/^  int fblock_id_;$/;"	m	class:GlobalCtrl
+fblock_len_	dnn_sim.h	/^  int fblock_len_; \/\/ for WB$/;"	m	class:DNNSim
+fblock_len_	global_controller.h	/^  int fblock_len_;$/;"	m	class:GlobalCtrl
+fblock_num_	dnn_sim.h	/^  int fblock_num_; \/\/ for WB$/;"	m	class:DNNSim
+filter_num	config.h	/^  unsigned filter_num;$/;"	m	class:NetConfigs
+filter_size	config.h	/^  uint64_t filter_size;$/;"	m	class:NetConfigs
+filter_size_x	config.h	/^  unsigned filter_size_x;$/;"	m	class:NetConfigs
+filter_size_y	config.h	/^  unsigned filter_size_y;$/;"	m	class:NetConfigs
+filter_size_z	config.h	/^  unsigned filter_size_z;$/;"	m	class:NetConfigs
+findEntry	global_controller.cpp	/^pipeEntry* CtrlCore::findEntry(int z) {$/;"	f	class:CtrlCore
+findFirstEntry	global_controller.cpp	/^pipeEntry* CtrlCore::findFirstEntry() {$/;"	f	class:CtrlCore
+frequency	config.h	/^  float frequency;$/;"	m	class:SimConfigs
+fromString	option_parser.cpp	/^   virtual bool fromString(const string str)$/;"	f	class:OptionRegistry
+fromString	option_parser.cpp	/^bool OptionRegistry<bool>::fromString(const string str)$/;"	f	class:OptionRegistry
+fromString	option_parser.cpp	/^bool OptionRegistry<char *>::fromString(const string str)$/;"	f	class:OptionRegistry
+fromString	option_parser.cpp	/^bool OptionRegistry<string>::fromString(const string str)$/;"	f	class:OptionRegistry
+getAccNum	component.cpp	/^uint64_t BufferGroup::getAccNum() {$/;"	f	class:BufferGroup
+getAccNum	component.cpp	/^uint64_t PUnitArray::getAccNum() {$/;"	f	class:PUnitArray
+getImageName	option_parser.cpp	/^   string getImageName() {$/;"	f	class:OptionParser
+getImageName	option_parser.cpp	/^string getImageName(option_parser_t opp) {$/;"	f
+getOutputName	option_parser.cpp	/^   string getOutputName() {$/;"	f	class:OptionParser
+getOutputName	option_parser.cpp	/^string getOutputName(option_parser_t opp) {$/;"	f
+getPipeOpInfo	pipe_stage.cpp	/^PipeOpInfo* PipeOp::getPipeOpInfo(int idx) {$/;"	f	class:PipeOp
+getPtrLayerInfo	image_parser.cpp	/^LayerInfo* ImageParser::getPtrLayerInfo() {$/;"	f	class:ImageParser
+getRdNum	component.cpp	/^uint64_t BufferGroup::getRdNum() {$/;"	f	class:BufferGroup
+getRdNum	component.cpp	/^uint64_t PUnitArray::getRdNum() {$/;"	f	class:PUnitArray
+getWrAccessCounter	component.cpp	/^uint64_t BufferGroup::getWrAccessCounter() {$/;"	f	class:BufferGroup
+getWrAccessCounter	component.cpp	/^uint64_t PUnitArray::getWrAccessCounter() {$/;"	f	class:PUnitArray
+getWrAccessCounter	component.h	/^  uint64_t getWrAccessCounter() {$/;"	f	class:Buffer
+getWrAccessCounter	component.h	/^  uint64_t getWrAccessCounter() {$/;"	f	class:PUnitRow
+getWrNum	component.cpp	/^uint64_t BufferGroup::getWrNum() {$/;"	f	class:BufferGroup
+getWrNum	component.cpp	/^uint64_t PUnitArray::getWrNum() {$/;"	f	class:PUnitArray
+get_cur_fblock_id	component.h	/^  int get_cur_fblock_id() {$/;"	f	class:WeightBufferGroup
+global_ctrl_	dnn_sim.h	/^  GlobalCtrl *global_ctrl_;$/;"	m	class:DNNSim
+image_name	config.h	/^  string image_name; $/;"	m	class:NetConfigs
+image_name	option_parser.cpp	/^  string image_name;$/;"	m	class:OptionParser	file:
+in_port_	pipe_stage.h	/^  PipePort *in_port_;$/;"	m	class:PipeStage
+info	image_parser.h	/^  LayerInfo info;$/;"	m	class:ImageParser
+initCountZ	global_controller.cpp	/^void GlobalCtrl::initCountZ() {$/;"	f	class:GlobalCtrl
+init_params_else	config.cpp	/^void SimConfigs::init_params_else() {$/;"	f	class:SimConfigs
+input_layer_x	config.h	/^  unsigned input_layer_x;$/;"	m	class:NetConfigs
+input_layer_y	config.h	/^  unsigned input_layer_y;$/;"	m	class:NetConfigs
+input_layer_z	config.h	/^  unsigned input_layer_z;$/;"	m	class:NetConfigs
+input_queue	component.h	/^  list<ReqEntry > input_queue;$/;"	m	class:Buffer
+input_queue	component.h	/^  list<ReqEntry > input_queue;$/;"	m	class:PUnitRow
+insertEntry	global_controller.cpp	/^void CtrlCore::insertEntry(int z, int bit_pos) {$/;"	f	class:CtrlCore
+internal_pipeline_	pipe_stage.h	/^  PipeOp **internal_pipeline_;$/;"	m	class:PipeStage
+isEndX	dnn_sim.cpp	/^bool DNNSim::isEndX() {$/;"	f	class:DNNSim
+isFlag	option_parser.cpp	/^   virtual bool isFlag() { return false; }$/;"	f	class:OptionRegistry
+isFlag	option_parser.cpp	/^bool OptionRegistry<bool>::isFlag() { return true; }$/;"	f	class:OptionRegistry
+isParsed	option_parser.cpp	/^   const bool isParsed() { return m_isParsed; }$/;"	f	class:OptionRegistryInterface
+isRunEnd	global_controller.cpp	/^bool GlobalCtrl::isRunEnd() {$/;"	f	class:GlobalCtrl
+isValid	pipe_stage.cpp	/^bool PipeOp::isValid(unsigned idx) {$/;"	f	class:PipeOp
+isValidAny	pipe_stage.cpp	/^bool PipeOp::isValidAny() {$/;"	f	class:PipeOp
+isValidEntry	global_controller.cpp	/^bool CtrlCore::isValidEntry() {$/;"	f	class:CtrlCore
+is_busy_	component.h	/^    bool is_busy_; $/;"	m	class:Buffer::Bank
+is_busy_	component.h	/^    bool is_busy_; $/;"	m	class:PUnitRow::PUnit
+is_end	pipe_stage.cpp	/^bool CtrlsPipeStage::is_end() {$/;"	f	class:CtrlsPipeStage
+latency_	component.h	/^  int latency_;$/;"	m	class:PUnitRow
+layer_info	main.cpp	/^LayerInfo *layer_info= NULL;$/;"	v
+layer_info_	dnn_sim.h	/^  LayerInfo *layer_info_;$/;"	m	class:DNNSim
+layer_info_	global_controller.h	/^  LayerInfo *layer_info_;$/;"	m	class:GlobalCtrl
+layer_info_	global_controller.h	/^  LayerInfo* layer_info_;$/;"	m	class:CtrlCore
+m_dram_interface	dnn_sim.h	/^  dram_interface *m_dram_interface;$/;"	m	class:DNNSim
+m_dram_sim	dram_interface.h	/^    DRAMSim::MultiChannelMemorySystem *m_dram_sim;$/;"	m	class:dram_interface
+m_isParsed	option_parser.cpp	/^   bool m_isParsed; \/\/ true if the target variable has been updated by fromString()$/;"	m	class:OptionRegistryInterface	file:
+m_optionDesc	option_parser.cpp	/^   string m_optionDesc;$/;"	m	class:OptionRegistryInterface	file:
+m_optionMap	option_parser.cpp	/^   OptionMap m_optionMap;$/;"	m	class:OptionParser	file:
+m_optionName	option_parser.cpp	/^   string m_optionName;$/;"	m	class:OptionRegistryInterface	file:
+m_optionReg	option_parser.cpp	/^   OptionCollection m_optionReg;$/;"	m	class:OptionParser	file:
+m_read_callback	dnn_sim.h	/^  DRAMSim::TransactionCompleteCB *m_read_callback;$/;"	m	class:DNNSim
+m_sim_cycle	dnn_sim.h	/^  unsigned long long m_sim_cycle;$/;"	m	class:DNNSim
+m_variable	option_parser.cpp	/^   T &m_variable;$/;"	m	class:OptionRegistry	file:
+m_write_callback	dnn_sim.h	/^  DRAMSim::TransactionCompleteCB *m_write_callback;$/;"	m	class:DNNSim
+main	main.cpp	/^int main(int argc, char **argv) {$/;"	f
+main_sim_loop	main.cpp	/^void *main_sim_loop(void *args) {$/;"	f
+makeOutputFile	output_file.cpp	/^void OutputFile::makeOutputFile(){$/;"	f	class:OutputFile
+moveX	dnn_sim.cpp	/^void DNNSim::moveX() {$/;"	f	class:DNNSim
+net_	output_file.h	/^  NetConfigs *net_;$/;"	m	class:OutputFile
+net_config	main.cpp	/^NetConfigs *net_config = NULL;$/;"	v
+net_config_	dnn_sim.h	/^  NetConfigs *net_config_;$/;"	m	class:DNNSim
+net_config_	global_controller.h	/^  NetConfigs *net_config_;$/;"	m	class:GlobalCtrl
+nin_size	common.h	/^  int nin_size[3]; \/\/ input neuron layer size (y, x, z)$/;"	m	class:LayerInfo
+nout_size	common.h	/^  int nout_size[3]; \/\/ output neuron layer size (y, x, z)$/;"	m	class:LayerInfo
+num_	component.h	/^  int num_;$/;"	m	class:BufferGroup
+num_FB_PU_	dnn_sim.h	/^  uint64_t num_FB_PU_;$/;"	m	class:DNNSim
+num_FB_PU_PART_	dnn_sim.h	/^  uint64_t num_FB_PU_PART_;$/;"	m	class:DNNSim
+num_FB_imap_y_	dnn_sim.h	/^  int num_FB_imap_y_; \/\/  $/;"	m	class:DNNSim
+num_GB_WB_	dnn_sim.h	/^  uint64_t num_GB_WB_;$/;"	m	class:DNNSim
+num_MEM_FB_	dnn_sim.h	/^  uint64_t num_MEM_FB_;$/;"	m	class:DNNSim
+num_MEM_FB_PART_	dnn_sim.h	/^  uint64_t num_MEM_FB_PART_;$/;"	m	class:DNNSim
+num_MEM_FB_PART_TEMP_	dnn_sim.h	/^  uint64_t num_MEM_FB_PART_TEMP_;$/;"	m	class:DNNSim
+num_MEM_GB_	dnn_sim.h	/^  uint64_t num_MEM_GB_;$/;"	m	class:DNNSim
+num_MEM_WB_	dnn_sim.h	/^  uint64_t num_MEM_WB_;$/;"	m	class:DNNSim
+num_acc_FB_	output_file.h	/^  uint64_t num_acc_FB_;$/;"	m	class:OutputFile
+num_acc_MEM_	output_file.h	/^  uint64_t num_acc_MEM_;$/;"	m	class:OutputFile
+num_acc_PU_	output_file.h	/^  uint64_t num_acc_PU_;$/;"	m	class:OutputFile
+num_acc_PU_1_	global_controller.h	/^  uint64_t num_acc_PU_1_; $/;"	m	class:GlobalCtrl
+num_acc_PU_2_	global_controller.h	/^  uint64_t num_acc_PU_2_; $/;"	m	class:GlobalCtrl
+num_acc_PU_3_	global_controller.h	/^  uint64_t num_acc_PU_3_;$/;"	m	class:GlobalCtrl
+num_acc_WB_	global_controller.h	/^  uint64_t num_acc_WB_;  $/;"	m	class:GlobalCtrl
+num_acc_WB_	output_file.h	/^  uint64_t num_acc_WB_;$/;"	m	class:OutputFile
+num_acc_ctrl_	global_controller.h	/^  uint64_t num_acc_ctrl_; $/;"	m	class:GlobalCtrl
+num_acc_ctrl_	output_file.h	/^  uint64_t num_acc_ctrl_;$/;"	m	class:OutputFile
+num_acc_net_	global_controller.h	/^  uint64_t num_acc_net_;$/;"	m	class:GlobalCtrl
+num_acc_net_	output_file.h	/^  uint64_t num_acc_net_;$/;"	m	class:OutputFile
+num_mem_callback_	dnn_sim.h	/^  int num_mem_callback_;$/;"	m	class:DNNSim
+num_mem_request_	dnn_sim.h	/^  int num_mem_request_;$/;"	m	class:DNNSim
+num_pipeline_stages_	pipe_stage.h	/^  unsigned num_pipeline_stages_;$/;"	m	class:PipeStage
+num_rd_	component.h	/^  uint64_t num_rd_;$/;"	m	class:Component
+num_rd_GB_	output_file.h	/^  uint64_t num_rd_GB_;$/;"	m	class:OutputFile
+num_wr_	component.h	/^  uint64_t num_wr_;$/;"	m	class:Component
+num_wr_GB_	output_file.h	/^  uint64_t num_wr_GB_;$/;"	m	class:OutputFile
+omap_pos_y_	dnn_sim.h	/^  pair<int, int> omap_pos_y_; \/\/ start, end$/;"	m	class:DNNSim
+omap_pos_y_len_	dnn_sim.h	/^  int omap_pos_y_len_; $/;"	m	class:DNNSim
+operator T	option_parser.cpp	/^   operator T()$/;"	f	class:OptionRegistry
+option_dtype	option_parser.h	/^enum option_dtype {$/;"	g
+option_parser_cfgfile	option_parser.cpp	/^void option_parser_cfgfile(option_parser_t opp,$/;"	f
+option_parser_cmdline	option_parser.cpp	/^void option_parser_cmdline(option_parser_t opp,$/;"	f
+option_parser_create	option_parser.cpp	/^option_parser_t option_parser_create() $/;"	f
+option_parser_destroy	option_parser.cpp	/^void option_parser_destroy(option_parser_t opp)$/;"	f
+option_parser_print	option_parser.cpp	/^void option_parser_print(option_parser_t opp, $/;"	f
+option_parser_register	option_parser.cpp	/^void option_parser_register(option_parser_t opp, $/;"	f
+option_parser_t	option_parser.h	/^typedef class OptionParser *option_parser_t;$/;"	t	typeref:class:OptionParser
+out_count_	pipe_stage.h	/^  int out_count_;$/;"	m	class:CtrlsPipeStage
+out_port_	pipe_stage.h	/^  PipePort *out_port_;$/;"	m	class:PipeStage
+outfile_name	config.h	/^  string outfile_name;$/;"	m	class:SimConfigs
+output_	dnn_sim.h	/^  OutputFile *output_;$/;"	m	class:DNNSim
+output_layer_x	config.h	/^  unsigned output_layer_x;$/;"	m	class:NetConfigs
+output_layer_x_	dnn_sim.h	/^  int output_layer_x_;$/;"	m	class:DNNSim
+output_layer_y	config.h	/^  unsigned output_layer_y;$/;"	m	class:NetConfigs
+output_layer_y_	dnn_sim.h	/^  int output_layer_y_;$/;"	m	class:DNNSim
+output_layer_z	config.h	/^  unsigned output_layer_z;$/;"	m	class:NetConfigs
+output_name	option_parser.cpp	/^  string output_name;$/;"	m	class:OptionParser	file:
+output_name_	output_file.h	/^  string output_name_;$/;"	m	class:OutputFile
+output_queue	component.h	/^  list<ReqEntry > output_queue;$/;"	m	class:Buffer
+output_queue	component.h	/^  list<ReqEntry > output_queue;$/;"	m	class:PUnitRow
+pipeEntry	global_controller.h	/^  pipeEntry() : valid_(false), z_(0), bit_pos_(0) {};$/;"	f	struct:pipeEntry
+pipeEntry	global_controller.h	/^struct pipeEntry {$/;"	s
+pipe_entry_list	global_controller.h	/^  vector<pipeEntry> pipe_entry_list;$/;"	m	class:CtrlCore
+pipe_op_info_	pipe_stage.h	/^  vector<PipeOpInfo > pipe_op_info_;$/;"	m	class:PipeOp
+pipe_ports_	global_controller.h	/^  PipePort *pipe_ports_;$/;"	m	class:GlobalCtrl
+popInPort	pipe_stage.cpp	/^void SBsPipeStage::popInPort() {$/;"	f	class:SBsPipeStage
+printEntry	global_controller.cpp	/^void CtrlCore::printEntry() {$/;"	f	class:CtrlCore
+printPipeOp	pipe_stage.cpp	/^void PipeOp::printPipeOp(unsigned idx) {$/;"	f	class:PipeOp
+print_else_params	config.cpp	/^void SimConfigs::print_else_params() {$/;"	f	class:SimConfigs
+print_stage	pipe_stage.cpp	/^void PipeStage::print_stage(unsigned idx) {$/;"	f	class:PipeStage
+provider_pipe_stage_	global_controller.h	/^  ProviderPipeStage *provider_pipe_stage_;$/;"	m	class:GlobalCtrl
+ptr_next_	component.h	/^  Component *ptr_next_;$/;"	m	class:Buffer
+pushReq	component.cpp	/^void Buffer::pushReq(ReqEntry entry) {$/;"	f	class:Buffer
+pushReq	component.cpp	/^void BufferGroup::pushReq( ReqEntry entry) {$/;"	f	class:BufferGroup
+pushReq	component.cpp	/^void PUnitArray::pushReq( ReqEntry entry) {$/;"	f	class:PUnitArray
+pushReq	component.cpp	/^void PUnitRow::pushReq(ReqEntry entry) {$/;"	f	class:PUnitRow
+pushReqRd	component.cpp	/^void Buffer::pushReqRd(uint64_t address) {$/;"	f	class:Buffer
+pushReqRd	component.cpp	/^void BufferGroup::pushReqRd( uint64_t address) {$/;"	f	class:BufferGroup
+pushReqRd	component.cpp	/^void PUnitArray::pushReqRd( uint64_t address) {$/;"	f	class:PUnitArray
+pushReqRd	component.cpp	/^void PUnitRow::pushReqRd(uint64_t address) {$/;"	f	class:PUnitRow
+pushReqWr	component.cpp	/^void Buffer::pushReqWr(uint64_t address) {$/;"	f	class:Buffer
+pushReqWr	component.cpp	/^void BufferGroup::pushReqWr( uint64_t address) {$/;"	f	class:BufferGroup
+pushReqWr	component.cpp	/^void PUnitArray::pushReqWr( uint64_t address) {$/;"	f	class:PUnitArray
+pushReqWr	component.cpp	/^void PUnitRow::pushReqWr(uint64_t address) {$/;"	f	class:PUnitRow
+push_request	dram_interface.cpp	/^void dram_interface::push_request(uint64_t addr, bool is_write){$/;"	f	class:dram_interface
+rd_latency_	component.h	/^  int rd_latency_;$/;"	m	class:Buffer
+read_complete_callback	dnn_sim.cpp	/^void DNNSim::read_complete_callback(unsigned id, uint64_t address, uint64_t clock_cycle){$/;"	f	class:DNNSim
+reg_options	config.cpp	/^void NetConfigs::reg_options(option_parser_t opp) {$/;"	f	class:NetConfigs
+reg_options	config.cpp	/^void SimConfigs::reg_options(option_parser_t opp) {$/;"	f	class:SimConfigs
+req_type_	component.h	/^  int req_type_; \/\/ 0: read, 1: wrtie$/;"	m	class:ReqEntry
+resetEntry	global_controller.h	/^  void resetEntry() {$/;"	f	struct:pipeEntry
+resetInfo	pipe_stage.cpp	/^void PipeOp::resetInfo(unsigned idx) {$/;"	f	class:PipeOp
+resetInfo	pipe_stage.cpp	/^void PipeOpInfo::resetInfo() {$/;"	f	class:PipeOpInfo
+resetPipeline	pipe_stage.cpp	/^void PipeStage::resetPipeline(unsigned idx) {$/;"	f	class:PipeStage
+resetPipelineAll	global_controller.cpp	/^void GlobalCtrl::resetPipelineAll(unsigned idx) {$/;"	f	class:GlobalCtrl
+resetWrAccessCounter	component.cpp	/^void BufferGroup::resetWrAccessCounter() {$/;"	f	class:BufferGroup
+resetWrAccessCounter	component.cpp	/^void PUnitArray::resetWrAccessCounter() {$/;"	f	class:PUnitArray
+resetWrAccessCounter	component.h	/^  void resetWrAccessCounter() {$/;"	f	class:Buffer
+resetWrAccessCounter	component.h	/^  void resetWrAccessCounter() {$/;"	f	class:PUnitRow
+resizeComponentCycle	output_file.h	/^  void resizeComponentCycle(int size){$/;"	f	class:OutputFile
+row_PU_num	config.h	/^  unsigned row_PU_num;$/;"	m	class:SimConfigs
+row_num	config.h	/^  unsigned row_num;$/;"	m	class:SimConfigs
+row_num_	component.h	/^  int row_num_;$/;"	m	class:PUnitArray
+run_end_flag_	global_controller.h	/^  vector<bool> run_end_flag_;$/;"	m	class:GlobalCtrl
+s_size	common.h	/^  int s_size[4]; \/\/ 3D synapse size and number $/;"	m	class:LayerInfo
+setData	global_controller.h	/^  void setData(bool valid, int z, int bit_pos) {$/;"	f	struct:pipeEntry
+setInfo	pipe_stage.cpp	/^void PipeOpInfo::setInfo(int z, int bit_pos) {$/;"	f	class:PipeOpInfo
+setLayerInfo	config.cpp	/^void NetConfigs::setLayerInfo(LayerInfo * layer_info) {$/;"	f	class:NetConfigs
+setOpInfo	pipe_stage.cpp	/^void PipeOp::setOpInfo(int idx, int z, int bit_pos) {$/;"	f	class:PipeOp
+setPtrNext	component.cpp	/^void BufferGroup::setPtrNext( Component* ptr_next) {$/;"	f	class:BufferGroup
+setPtrNext	component.h	/^  void setPtrNext(Component *ptr_next) {$/;"	f	class:Buffer
+setPtrNext	component.h	/^  void setPtrNext(Component *ptr_next) {$/;"	f	class:PUnitArray
+setPtrNext	component.h	/^  void setPtrNext(Component *ptr_next) {};$/;"	f	class:PUnitRow
+setToDoFilters	global_controller.cpp	/^void GlobalCtrl::setToDoFilters(int fblock_id) {$/;"	f	class:GlobalCtrl
+setValid	pipe_stage.cpp	/^void PipeOp::setValid(unsigned idx) {$/;"	f	class:PipeOp
+setXY	global_controller.h	/^  void setXY(int x, int y) {$/;"	f	class:GlobalCtrl
+set_callbacks	dram_interface.cpp	/^void dram_interface::set_callbacks(DRAMSim::TransactionCompleteCB *read_callback,$/;"	f	class:dram_interface
+set_cur_fblock_id	component.h	/^  void set_cur_fblock_id(int fblock_id) {$/;"	f	class:WeightBufferGroup
+set_end_condition_test	global_controller.cpp	/^void GlobalCtrl::set_end_condition_test(int num) {$/;"	f	class:GlobalCtrl
+set_end_condition_test	pipe_stage.cpp	/^void CtrlsPipeStage::set_end_condition_test(int num) {$/;"	f	class:CtrlsPipeStage
+set_fblock_len	global_controller.h	/^  void set_fblock_len(int fblock_len) {$/;"	f	class:GlobalCtrl
+set_net_config	dnn_sim.h	/^  void set_net_config(NetConfigs *net) {$/;"	f	class:DNNSim
+sim_config	main.cpp	/^SimConfigs *sim_config = NULL;$/;"	v
+sim_config_	dnn_sim.h	/^  SimConfigs *sim_config_;$/;"	m	class:DNNSim
+sim_config_	global_controller.h	/^  SimConfigs *sim_config_; $/;"	m	class:GlobalCtrl
+sim_state_	dnn_sim.h	/^  SimState sim_state_; $/;"	m	class:DNNSim
+static_eng_acc_CTRL_	output_file.h	/^  double static_eng_acc_CTRL_;$/;"	m	class:OutputFile
+static_eng_acc_FB_	output_file.h	/^  double static_eng_acc_FB_;$/;"	m	class:OutputFile
+static_eng_acc_GB_	output_file.h	/^  double static_eng_acc_GB_;$/;"	m	class:OutputFile
+static_eng_acc_NET_	output_file.h	/^  double static_eng_acc_NET_;$/;"	m	class:OutputFile
+static_eng_acc_PU_	output_file.h	/^  double static_eng_acc_PU_;$/;"	m	class:OutputFile
+static_eng_acc_WB_	output_file.h	/^  double static_eng_acc_WB_;$/;"	m	class:OutputFile
+static_simulation	config.cpp	/^void static_simulation() {$/;"	f
+static_simulation	dnn_sim.cpp	/^void DNNSim::static_simulation() {$/;"	f	class:DNNSim
+stride	config.h	/^  unsigned stride;$/;"	m	class:NetConfigs
+subProcess	global_controller.cpp	/^void GlobalCtrl::subProcess(PipeOp *op, int idx) {$/;"	f	class:GlobalCtrl
+test_dnn_sim	main.cpp	/^void test_dnn_sim() {$/;"	f
+test_n	dnn_sim.h	/^  int test_n;$/;"	m	class:DNNSim
+toString	option_parser.cpp	/^   virtual string toString() $/;"	f	class:OptionRegistry
+toString	option_parser.cpp	/^string OptionRegistry<char *>::toString() $/;"	f	class:OptionRegistry
+total_FB_capacity	config.h	/^  uint64_t total_FB_capacity; \/\/ kB$/;"	m	class:SimConfigs
+total_PU_capacity	config.h	/^  uint64_t total_PU_capacity; \/\/ B$/;"	m	class:SimConfigs
+total_WB_capacity	config.h	/^  uint64_t total_WB_capacity; \/\/ kB$/;"	m	class:SimConfigs
+total_cycle	output_file.h	/^  uint64_t total_cycle;$/;"	m	class:OutputFile
+total_filter_capacity	config.h	/^  uint64_t total_filter_capacity; $/;"	m	class:NetConfigs
+total_imap_capacity	config.h	/^  uint64_t total_imap_capacity; $/;"	m	class:NetConfigs
+total_pipe_stage_	global_controller.h	/^  int total_pipe_stage_;$/;"	m	class:CtrlCore
+valid_	global_controller.h	/^  bool valid_;$/;"	m	struct:pipeEntry
+valid_	pipe_stage.h	/^  vector<bool> valid_;$/;"	m	class:PipeOp
+wr_access_counter_	component.h	/^  uint64_t wr_access_counter_;$/;"	m	class:Buffer
+wr_access_counter_	component.h	/^  uint64_t wr_access_counter_;$/;"	m	class:PUnitRow
+wr_latency_	component.h	/^  int wr_latency_;$/;"	m	class:Buffer
+write_complete_callback	dnn_sim.cpp	/^void DNNSim::write_complete_callback(unsigned id, uint64_t address, uint64_t clock_cycle){$/;"	f	class:DNNSim
+x_dir_	dnn_sim.h	/^  bool x_dir_; \/\/ true: up, false: down$/;"	m	class:DNNSim
+z_	global_controller.h	/^  int z_;$/;"	m	struct:pipeEntry
+z_	pipe_stage.h	/^  int z_;$/;"	m	class:PipeOpInfo
+~Buffer	component.h	/^  ~Buffer(){};$/;"	f	class:Buffer
+~Component	component.h	/^  ~Component(){}$/;"	f	class:Component
+~CtrlCore	global_controller.cpp	/^CtrlCore::~CtrlCore() {$/;"	f	class:CtrlCore
+~CtrlsPipeStage	pipe_stage.cpp	/^CtrlsPipeStage::~CtrlsPipeStage() {$/;"	f	class:CtrlsPipeStage
+~DNNSim	dnn_sim.cpp	/^DNNSim::~DNNSim() {$/;"	f	class:DNNSim
+~GlobalCtrl	global_controller.cpp	/^GlobalCtrl::~GlobalCtrl() {$/;"	f	class:GlobalCtrl
+~ImageParser	image_parser.cpp	/^ImageParser::~ImageParser() {$/;"	f	class:ImageParser
+~NetConfigs	config.h	/^  ~NetConfigs(){};$/;"	f	class:NetConfigs
+~OptionParser	option_parser.cpp	/^   ~OptionParser() $/;"	f	class:OptionParser
+~OptionRegistry	option_parser.cpp	/^   virtual ~OptionRegistry() {}$/;"	f	class:OptionRegistry
+~OptionRegistryInterface	option_parser.cpp	/^   virtual ~OptionRegistryInterface() {}$/;"	f	class:OptionRegistryInterface
+~OutputFile	output_file.h	/^  ~OutputFile() {}$/;"	f	class:OutputFile
+~PEsPipeStage	pipe_stage.cpp	/^PEsPipeStage::~PEsPipeStage() {$/;"	f	class:PEsPipeStage
+~PUnitRow	component.h	/^  ~PUnitRow(){}$/;"	f	class:PUnitRow
+~PipeOp	pipe_stage.cpp	/^PipeOp::~PipeOp() {$/;"	f	class:PipeOp
+~PipeStage	pipe_stage.cpp	/^PipeStage::~PipeStage() {$/;"	f	class:PipeStage
+~ProviderPipeStage	pipe_stage.cpp	/^ProviderPipeStage::~ProviderPipeStage() {$/;"	f	class:ProviderPipeStage
+~SBsPipeStage	pipe_stage.cpp	/^SBsPipeStage::~SBsPipeStage() {$/;"	f	class:SBsPipeStage
+~SimConfigs	config.h	/^  ~SimConfigs(){};$/;"	f	class:SimConfigs
+~dram_interface	dram_interface.cpp	/^dram_interface::~dram_interface(){$/;"	f	class:dram_interface

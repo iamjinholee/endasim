@@ -1,0 +1,4 @@
+in_x in_y in_channel
+out_x out_y out_channel
+filter_x filter_y in_channel out_channel
+bits bits bits bits

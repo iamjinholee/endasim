@@ -1,0 +1,3 @@
+env = Environment(CXX='clang++')
+env.Append(CXXFLAGS = '-std=c++11')
+env.Program('main', ['image_parser.cpp', 'main.cpp'])

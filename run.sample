@@ -1,0 +1,1 @@
+parallel -j 48 ./dnn-sim -config dnn-sim.config -net image_ratio_{1}_layer_{2} -out ratio_{1}_layer{2} ::: 0.51 ::: {02..13}
